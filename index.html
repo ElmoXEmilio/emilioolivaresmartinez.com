@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emilio's Engineering Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        nav {
+            background: #333;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1.5rem;
+            margin: 0 0.5rem;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+        
+        nav a:hover {
+            background: #555;
+            border-radius: 4px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        section {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+        
+        .project {
+            margin-bottom: 2.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .project:last-child {
+            border-bottom: none;
+        }
+        
+        .project h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+        
+        .project-meta {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        
+        .project img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .skill-tag {
+            background: #667eea;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .contact-info a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Emilio Olivares Martines</h1>
+        <p>Mechanical Engineering Student | Northeastern University</p>
+    </header>
+    
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm a first-year mechanical engineering student at Northeastern University with a passion for prosthetics, drones, and aerospace technologies.</p>
+            <p>I'm actively seeking internship opportunities where I can apply my engineering skills and contribute to innovative projects in mechanical design and assistive technology.</p>
+        </section>
+        
+        <section id="projects">
+            <h2>Projects</h2>
+            
+            <div class="project">
+                <h3>Bottle Buddy</h3>
+                <p class="project-meta">Fall 2024 | Academic Project</p>
+                <p> For our senester project, me and my team of four people created "Bottle Buddy" a device designed to assist people with commercially avaialbe prosthetic hands or people with weak hand or wrist or grip strength to open commercial water bottles</p>
+                <!-- Add image: <img src="images/prosthetics-research.jpg" alt="Prosthetics Research"> -->
+                <p><strong>Key Focus Areas:</strong></p>
+                <ul>
+                    <li>Learning and applying the "Design Process" used in industry</li>
+                    <li>Creating a device that would fall under the "Assitive Moment" prompt</li>
+                    <li>Documenting our building processs and result in a "Design Report" similar to the ones used in industry</li>
+                </ul>
+            </div>
+            
+            <!-- Add more projects as needed -->
+        </section>
+        
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <span class="skill-tag">SolidWorks Modeling</span>
+                <span class="skill-tag">CAD Modeling</span>
+                <span class="skill-tag">Arduino Programming</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">Mechanical Design</span>
+                <span class="skill-tag">Technical Writing</span>
+                <span class="skill-tag">Research & Analysis</span>
+                <span class="skill-tag">3D Printing</span>
+                <span class="skill-tag">Sodering</span>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:olivaresmartinez.e@northeastern.edu">olivaresmartinez.e@northeastern.edu</a></p>
+                <p><strong>LinkedIn:</strong> <a href="www.linkedin.com/in/emilio-olivares-martinez-34a459322" target="_blank">www.linkedin.com/in/emilio-olivares-martinez-34a459322</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/ElmoXEmilio" target="_blank">https://github.com/ElmoXEmilio</a></p>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Emilio Olivares Martinez | Mechanical Engineering Portfolio</p>
+    </footer>
+</body>
+</html>
